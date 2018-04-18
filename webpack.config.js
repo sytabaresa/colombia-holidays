@@ -7,8 +7,11 @@ const config = {
     entry: './index.js',
     output: {
         path: path.resolve(__dirname, 'js'),
-        filename: 'holidays.js'
+        filename: 'holidays.js',
+        library: 'holidays'
+
     },
+
     plugins: [
         new MinifyPlugin({}, {})
     ]
