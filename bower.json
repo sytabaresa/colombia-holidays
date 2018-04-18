@@ -1,0 +1,21 @@
+{
+  "name": "colombia-holidays",
+  "description": "Días festivos no laborables en Colombia",
+  "main": "index.js",
+  "authors": [
+    "escatano@bancolombia.com.co sytabaresa@gmail.com"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "colombia",
+    "holidays"
+  ],
+  "homepage": "https://github.com/sytabaresa/colombia-holidays",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -9,8 +9,23 @@ module.exports = function (grunt) {
 				],
 				dest: 'README.md'
 			}
-		}
-	});
+		},
+		uglify: {  
+            options: {  
+                compress: true  
+            },  
+            applib: {  
+                src: [  
+				'index.js',
+				'holidays.js',
+				'nextDay.js'
+                ],  
+                dest: 'js/applib.js'  
+            }  
+        }  
+    }); 
+
 	grunt.loadNpmTasks('grunt-jsdoc-to-markdown');
 	grunt.registerTask('doc', 'jsdoc2md');
+	grunt.registerTask('default','uglify')
 };
