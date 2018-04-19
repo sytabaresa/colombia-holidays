@@ -1,7 +1,7 @@
 {
   "name": "colombia-holidays",
   "description": "Días festivos no laborables en Colombia",
-  "main": "index.js",
+  "main": "js/holidays.js",
   "authors": [
     "escatano@bancolombia.com.co sytabaresa@gmail.com"
   ],
