@@ -3,17 +3,21 @@ const path = require('path');
 const MinifyPlugin = require("babel-minify-webpack-plugin");
 
 const config = {
-    mode: 'production',
-    entry: './index.js',
+    mode: 'none',
+    entry: {
+        'holidays': './index.js',
+        'holidays.min': './index.js'
+    },
     output: {
         path: path.resolve(__dirname, 'js'),
-        filename: 'holidays.js',
+        filename: '[name].js',
         library: 'holidays'
-
     },
 
     plugins: [
-        new MinifyPlugin({}, {})
+        new MinifyPlugin({}, {
+            include: /\.min\.js$/
+        })
     ],
     module: {
         rules: [
